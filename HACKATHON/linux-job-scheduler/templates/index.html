@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TaskFlow | Linux Job Scheduler</title>
+<link rel="stylesheet" href="/static/style.css">
+<script src="/static/script.js" defer></script>
+</head>
+<body>
+<aside class="sidebar">
+  <h2>◈ TaskFlow</h2>
+  <p class="muted">LINUX AUTOMATION</p>
+  <nav>
+    <a class="active" href="#dashboard">▦ Dashboard</a>
+    <a href="#jobs">◷ Scheduled Jobs</a>
+    <a href="#logs">▤ Execution Logs</a>
+  </nav>
+  <div class="system"><span class="dot"></span> Linux workspace</div>
+</aside>
+<main>
+<header>
+  <div><p class="muted">OPERATING SYSTEMS / AUTOMATION</p>
+  <h1>Job Scheduler</h1>
+  <p class="muted">Schedule, execute and monitor Linux tasks.</p></div>
+  <span class="badge"><span class="dot"></span> System ready</span>
+</header>
+<section class="stats" id="dashboard">
+  <article class="card"><p>Total Jobs</p><h2 id="total">0</h2><small>All scheduled tasks</small></article>
+  <article class="card"><p>Active Jobs</p><h2 id="active">0</h2><small>Enabled tasks</small></article>
+  <article class="card"><p>Completed</p><h2 id="completed">0</h2><small>One-time jobs finished</small></article>
+  <article class="card"><p>Failed</p><h2 id="failed">0</h2><small>Execution failures</small></article>
+</section>
+<section class="panel">
+  <div class="panel-heading"><div><h2>Create a job</h2><p class="muted">Configure an approved Linux command.</p></div><span class="tag">NEW TASK</span></div>
+  <form id="jobForm">
+    <label for="command">Command or script</label>
+    <input id="command" placeholder="e.g. /usr/bin/date" required maxlength="200">
+    <div class="form-grid">
+      <div><label for="delay">Run after (seconds)</label><input id="delay" type="number" min="1" value="10" required></div>
+      <div><label for="interval">Repeat interval</label><select id="interval"><option value="0">Run once</option><option value="10">Every 10 seconds (demo)</option><option value="60">Every minute</option><option value="3600">Every hour</option><option value="86400">Every day</option></select></div>
+    </div>
+    <button type="submit">＋ Schedule Job</button><p id="message" role="status"></p>
+  </form>
+</section>
+<section class="panel" id="jobs">
+  <div class="panel-heading"><div><h2>Scheduled jobs</h2><p class="muted">Manage the automation queue.</p></div><button class="secondary" id="refresh">↻ Refresh</button></div>
+  <div class="table-wrap"><table><thead><tr><th>ID</th><th>COMMAND</th><th>STATUS</th><th>NEXT RUN</th><th>ACTIONS</th></tr></thead><tbody id="jobTable"><tr><td colspan="5">Connecting...</td></tr></tbody></table></div>
+</section>
+<section class="panel" id="logs">
+  <div class="panel-heading"><div><h2>Execution logs</h2><p class="muted">Recent scheduler activity.</p></div><button class="secondary" id="refreshLogs">↻ Refresh logs</button></div>
+  <pre id="logOutput">Loading logs...</pre>
+</section>
+<footer>TaskFlow · Linux Job Scheduler · C-powered execution</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "command": "/usr/bin/date",
+    "delay": 5,
+    "interval": 0,
+    "next_run": 1792168946.5937943,
+    "enabled": false,
+    "completed": true,
+    "last_status": "SUCCESS",
+    "last_output": "[C ENGINE] Starting Linux job execution...\nFri Oct 16 16:42:27 UTC 2026\n[C ENGINE] Process finished with exit code 0",
+    "running": false
+  },
+  {
+    "id": 2,
+    "command": "/usr/bin/date",
+    "delay": 60,
+    "interval": 0,
+    "next_run": 1792169033.4882512,
+    "enabled": true,
+    "completed": true,
+    "last_status": "SUCCESS",
+    "last_output": "[C ENGINE] Starting Linux job execution...\nFri Oct 16 16:43:54 UTC 2026\n[C ENGINE] Process finished with exit code 0",
+    "running": false
+  },
+  {
+    "id": 3,
+    "command": "/usr/bin/date",
+    "delay": 5,
+    "interval": 0,
+    "next_run": 1792169068.613188,
+    "enabled": true,
+    "completed": true,
+    "last_status": "SUCCESS",
+    "last_output": "[C ENGINE] Starting Linux job execution...\nFri Oct 16 16:44:29 UTC 2026\n[C ENGINE] Process finished with exit code 0",
+    "running": false
+  },
+  {
+    "id": 4,
+    "command": "/usr/bin/date",
+    "delay": 30,
+    "interval": 0,
+    "next_run": 1792169164.3872914,
+    "enabled": true,
+    "completed": true,
+    "last_status": "SUCCESS",
+    "last_output": "[C ENGINE] Starting Linux job execution...\nFri Oct 16 16:46:05 UTC 2026\n[C ENGINE] Process finished with exit code 0",
+    "running": false
+  },
+  {
+    "id": 5,
+    "command": "/usr/bin/date",
+    "delay": 10,
+    "interval": 0,
+    "next_run": 1792218782.499558,
+    "enabled": true,
+    "completed": true,
+    "last_status": "SUCCESS",
+    "last_output": "[C ENGINE] Starting Linux job execution...\nSat Oct 17 06:33:02 UTC 2026\n[C ENGINE] Process finished with exit code 0",
+    "running": false
+  },
+  {
+    "id": 6,
+    "command": "ls",
+    "delay": 5,
+    "interval": 0,
+    "next_run": 1792218863.984721,
+    "enabled": true,
+    "completed": true,
+    "last_status": "SUCCESS",
+    "last_output": "[C ENGINE] Starting Linux job execution...\n__pycache__\napp.py\njob_runner\njobs.json\npresentation_and_viva_prep.md\nscheduler.c\nscheduler.log\nstart.sh\nstatic\ntemplates\n[C ENGINE] Process finished with exit code 0",
+    "running": false
+  }
+]
